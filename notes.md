@@ -45,6 +45,12 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
   slugs/Megatherium, dragonflies/Quetzalcoatlus, hornets/Minotaur). Per request the
   format is even briefer: no tale-of-the-tape line, 4 terse factual bullets, no jokes,
   plain captions. (Slugs are gastropods, not insects, but they were requested by name.)
+- Added a second image type: portrait infographics (gpt-image-2, medium, 1024x1536),
+  shown below the battle image, currently for matchups 1-2 only. Prompts are
+  intentionally high-level ("compare sizes and weapons, show tactics, present a final
+  number") so the image model invents all text/numbers itself — captions flag this.
+  Infographics render at max 480px wide in the card; lightbox works on them
+  automatically.
 
 ## Final Verdicts
 | # | Matchup | Verdict |
