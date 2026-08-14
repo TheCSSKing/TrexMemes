@@ -99,6 +99,31 @@ PROMPTS = {
         "engulfed by a glittering cloud of thousands of iridescent "
         "hummingbirds darting around its head and eyes."
     ),
+    "ticks_vs_argentinosaurus": STYLE + (
+        "A colossal long-necked Argentinosaurus sauropod in a Cretaceous "
+        "floodplain, its legs and flanks speckled with countless tiny ticks, "
+        "dark drifts of ticks climbing up from the tall grass below."
+    ),
+    "ladybugs_vs_triceratops": STYLE + (
+        "A massive Triceratops in a fern meadow blanketed by millions of "
+        "red-and-black ladybugs covering its frill and horns like living "
+        "armor, clouds of ladybugs descending from the sky."
+    ),
+    "slugs_vs_megatherium": STYLE + (
+        "A towering giant ground sloth Megatherium rearing up in a lush "
+        "ice-age forest, the ground and tree trunks around it covered in "
+        "thousands of glistening slugs and shining slime trails."
+    ),
+    "dragonflies_vs_quetzalcoatlus": STYLE + (
+        "A giraffe-sized Quetzalcoatlus pterosaur flying over a prehistoric "
+        "river delta, mobbed by an immense swirling swarm of iridescent "
+        "dragonflies attacking its head and wing membranes."
+    ),
+    "hornets_vs_minotaur": STYLE + (
+        "A hulking Minotaur with an axe in a stone labyrinth, engulfed by a "
+        "furious swarm of giant hornets pouring in through the corridors, "
+        "the Minotaur swinging wildly at the cloud."
+    ),
 }
 
 
