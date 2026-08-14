@@ -7,7 +7,7 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
 2. A detailed (pseudo-)scientific analysis with a final number
 3. An AI-generated battle image (OpenAI `gpt-image-2`, medium quality, landscape 1536x1024)
 
-## The Ten Matchups
+## The Matchups (original ten)
 1. House Cats vs. Tyrannosaurus rex
 2. Honey Badgers vs. Woolly Mammoth
 3. Chickens vs. Velociraptor
@@ -36,6 +36,11 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
   opaque background and `object-fit: contain`. Closes via backdrop click, the X
   button, or Escape; images are keyboard-focusable and body scroll is locked while
   open. Verified with Playwright at desktop (1280x800) and mobile (390x844) sizes.
+- Added five more matchups (11-15: geese/Cyclops, hedgehogs/Basilisk, otters/Mosasaurus,
+  guinea pigs/Titanoboa, hummingbirds/Roc). Per request these use a briefer, bulleted
+  analysis format instead of the three-paragraph essays; same card layout and images
+  (gpt-image-2, medium, 1536x1024). Lightbox picks them up automatically since it
+  binds to all `figure img` elements.
 
 ## Final Verdicts
 | # | Matchup | Verdict |
@@ -50,6 +55,11 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
 | 8 | Squirrels vs. Lernaean Hydra | ~800 squirrels |
 | 9 | Emperor penguins vs. Kraken | ~5,000 penguins |
 | 10 | Mallard ducks vs. Paraceratherium | ~50,000 ducks |
+| 11 | Canada geese vs. Cyclops | ~30 geese |
+| 12 | Hedgehogs vs. Basilisk | ~200 hedgehogs |
+| 13 | Sea otters vs. Mosasaurus | ~350 otters |
+| 14 | Guinea pigs vs. Titanoboa | ~3,000 guinea pigs |
+| 15 | Hummingbirds vs. Roc | ~1,500 hummingbirds |
 
 ## Analysis Methodology (loosely)
 Each verdict weighs: mass ratio, the giant's kill rate against swarming attackers,
