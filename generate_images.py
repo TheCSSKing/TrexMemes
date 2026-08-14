@@ -15,6 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 API_URL = "https://api.openai.com/v1/images/generations"
 MODEL = "gpt-image-2"
 SIZE = "1536x1024"
+SIZE_PORTRAIT = "1024x1536"
 QUALITY = "medium"
 OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
 
@@ -126,15 +127,39 @@ PROMPTS = {
     ),
 }
 
+# Portrait infographics. Prompts are deliberately high-level: the model is
+# told what kind of infographic to make and invents all the text, numbers,
+# diagrams, and layout itself.
+INFOGRAPHIC_STYLE = (
+    "A tall portrait-orientation infographic poster, clean modern flat design "
+    "with a muted parchment-and-dark color scheme, clear headline, stat "
+    "callouts, small diagrams and icons, legible invented text throughout. "
+)
 
-def generate(name: str, prompt: str) -> str:
+INFOGRAPHIC_PROMPTS = {
+    "infographic_cats_vs_trex": INFOGRAPHIC_STYLE + (
+        "Topic: how many ordinary house cats it would take to defeat a "
+        "Tyrannosaurus rex in battle. Compare the two animals' sizes and "
+        "weapons, show the cats' swarm tactics and battle plan, and present "
+        "a final estimated number."
+    ),
+    "infographic_honeybadgers_vs_mammoth": INFOGRAPHIC_STYLE + (
+        "Topic: how many honey badgers it would take to defeat a woolly "
+        "mammoth in battle. Compare the two animals' sizes and weapons, show "
+        "the badgers' attack strategy and the mammoth's defenses, and present "
+        "a final estimated number."
+    ),
+}
+
+
+def generate(name: str, prompt: str, size: str = SIZE) -> str:
     out_path = os.path.join(OUT_DIR, f"{name}.png")
     if os.path.exists(out_path):
         return f"skip {name} (exists)"
     body = json.dumps({
         "model": MODEL,
         "prompt": prompt,
-        "size": SIZE,
+        "size": size,
         "quality": QUALITY,
         "n": 1,
     }).encode()
@@ -161,6 +186,10 @@ def main() -> int:
     failures = 0
     with ThreadPoolExecutor(max_workers=3) as pool:
         futures = {pool.submit(generate, n, p): n for n, p in PROMPTS.items()}
+        futures.update({
+            pool.submit(generate, n, p, SIZE_PORTRAIT): n
+            for n, p in INFOGRAPHIC_PROMPTS.items()
+        })
         for fut in as_completed(futures):
             result = fut.result()
             print(result, flush=True)
