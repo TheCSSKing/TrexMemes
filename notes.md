@@ -41,6 +41,10 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
   analysis format instead of the three-paragraph essays; same card layout and images
   (gpt-image-2, medium, 1536x1024). Lightbox picks them up automatically since it
   binds to all `figure img` elements.
+- Added five insect-swarm matchups (16-20: ticks/Argentinosaurus, ladybugs/Triceratops,
+  slugs/Megatherium, dragonflies/Quetzalcoatlus, hornets/Minotaur). Per request the
+  format is even briefer: no tale-of-the-tape line, 4 terse factual bullets, no jokes,
+  plain captions. (Slugs are gastropods, not insects, but they were requested by name.)
 
 ## Final Verdicts
 | # | Matchup | Verdict |
@@ -60,6 +64,11 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
 | 13 | Sea otters vs. Mosasaurus | ~350 otters |
 | 14 | Guinea pigs vs. Titanoboa | ~3,000 guinea pigs |
 | 15 | Hummingbirds vs. Roc | ~1,500 hummingbirds |
+| 16 | Ticks vs. Argentinosaurus | ~3,000,000 ticks |
+| 17 | Ladybugs vs. Triceratops | ~10,000,000 ladybugs |
+| 18 | Slugs vs. Megatherium | ~500,000 slugs |
+| 19 | Dragonflies vs. Quetzalcoatlus | ~50,000 dragonflies |
+| 20 | Giant hornets vs. Minotaur | ~3,000 hornets |
 
 ## Analysis Methodology (loosely)
 Each verdict weighs: mass ratio, the giant's kill rate against swarming attackers,
