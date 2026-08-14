@@ -31,6 +31,11 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
   all 10 images generated successfully, ~3 MB each, 1536x1024 landscape, medium quality.
 - Wrote `index.html`: dark parchment-style theme, one card per matchup with title,
   "tale of the tape" stat line, verdict badge, three-paragraph analysis, and the image.
+- Added a lightbox: clicking any battle image opens it in a modal (dimmed overlay,
+  caption, close button). On mobile (<=700px) the modal is true full-screen with an
+  opaque background and `object-fit: contain`. Closes via backdrop click, the X
+  button, or Escape; images are keyboard-focusable and body scroll is locked while
+  open. Verified with Playwright at desktop (1280x800) and mobile (390x844) sizes.
 
 ## Final Verdicts
 | # | Matchup | Verdict |
