@@ -74,6 +74,31 @@ PROMPTS = {
         "an ancient floodplain while an immense flock of mallard ducks mobs it "
         "from the air and water, quacking chaos."
     ),
+    "geese_vs_cyclops": STYLE + (
+        "A giant one-eyed Cyclops stumbling on a rocky Greek island shore, "
+        "besieged by a furious flock of Canada geese dive-bombing his face and "
+        "biting his ankles, feathers and dropped club flying."
+    ),
+    "hedgehogs_vs_basilisk": STYLE + (
+        "A monstrous serpent-like basilisk with a crowned head in a ruined "
+        "stone corridor, surrounded by hundreds of hedgehogs curled into spiky "
+        "balls rolling toward it like living caltrops."
+    ),
+    "otters_vs_mosasaurus": STYLE + (
+        "A huge Mosasaurus bursting through the ocean surface while hundreds "
+        "of agile sea otters swarm around it in the water, dodging its jaws "
+        "and clinging to its flippers, spray everywhere."
+    ),
+    "guineapigs_vs_titanoboa": STYLE + (
+        "A colossal Titanoboa snake coiled in a steamy prehistoric jungle "
+        "river, confronted by an enormous horde of fluffy guinea pigs covering "
+        "the banks and logs, squeaking defiantly."
+    ),
+    "hummingbirds_vs_roc": STYLE + (
+        "A gigantic mythical Roc bird with vast wings above desert cliffs, "
+        "engulfed by a glittering cloud of thousands of iridescent "
+        "hummingbirds darting around its head and eyes."
+    ),
 }
 
 
