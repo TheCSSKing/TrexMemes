@@ -26,3 +26,28 @@ Ten matchups spanning living, extinct, and mythical animals. Each matchup gets:
 
 ## Log
 - Created repo skeleton and this notes file; picked the ten matchups.
+- Smoke-tested the OpenAI Images API: `gpt-image-2` accepted, returns b64 PNG at 1536x1024.
+- Wrote `generate_images.py` (3 concurrent workers, retries, skip-if-exists) and ran it:
+  all 10 images generated successfully, ~3 MB each, 1536x1024 landscape, medium quality.
+- Wrote `index.html`: dark parchment-style theme, one card per matchup with title,
+  "tale of the tape" stat line, verdict badge, three-paragraph analysis, and the image.
+
+## Final Verdicts
+| # | Matchup | Verdict |
+|---|---------|---------|
+| 1 | House cats vs. T. rex | ~2,500 cats |
+| 2 | Honey badgers vs. Woolly mammoth | ~120 badgers |
+| 3 | Chickens vs. Velociraptor | ~5 chickens |
+| 4 | Brown rats vs. Smilodon | ~1,000 rats |
+| 5 | Piranhas vs. Megalodon | ~15,000 piranhas |
+| 6 | Army ants vs. Dragon | ~2,500,000 ants |
+| 7 | Corgis vs. Griffin | ~40 corgis |
+| 8 | Squirrels vs. Lernaean Hydra | ~800 squirrels |
+| 9 | Emperor penguins vs. Kraken | ~5,000 penguins |
+| 10 | Mallard ducks vs. Paraceratherium | ~50,000 ducks |
+
+## Analysis Methodology (loosely)
+Each verdict weighs: mass ratio, the giant's kill rate against swarming attackers,
+the small animal's ability to reach a genuine vulnerability (eyes, gills, tendons,
+airways, or logistics like food/water/sleep), stamina asymmetry between an
+individual and a rotating swarm, and expected casualty rates with a reserve margin.
